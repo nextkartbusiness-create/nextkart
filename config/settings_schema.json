@@ -1,9 +1,9 @@
 [
   {
     "name": "theme_info",
-    "theme_name": "Dawn",
-    "theme_version": "6.0.0",
-    "theme_author": "Shopify",
+    "theme_name": "NextKart Atelier",
+    "theme_version": "1.0.0",
+    "theme_author": "NextKart",
     "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
     "theme_support_url": "https://support.shopify.com/"
   },
@@ -24,7 +24,7 @@
       {
         "type": "color",
         "id": "colors_accent_1",
-        "default": "#121212",
+        "default": "#6C2BFF",
         "label": "t:settings_schema.colors.settings.colors_accent_1.label",
         "info": "t:settings_schema.colors.settings.colors_accent_1.info"
       },
@@ -36,7 +36,7 @@
       {
         "type": "color",
         "id": "colors_accent_2",
-        "default": "#334FB4",
+        "default": "#3B82F6",
         "label": "t:settings_schema.colors.settings.colors_accent_2.label"
       },
       {
@@ -51,14 +51,14 @@
       {
         "type": "color",
         "id": "colors_text",
-        "default": "#121212",
+        "default": "#17151C",
         "label": "t:settings_schema.colors.settings.colors_text.label",
         "info": "t:settings_schema.colors.settings.colors_text.info"
       },
       {
         "type": "color",
         "id": "colors_outline_button_labels",
-        "default": "#121212",
+        "default": "#17151C",
         "label": "t:settings_schema.colors.settings.colors_outline_button_labels.label",
         "info": "t:settings_schema.colors.settings.colors_outline_button_labels.info"
       },
@@ -76,7 +76,7 @@
       {
         "type": "color",
         "id": "colors_background_2",
-        "default": "#F3F3F3",
+        "default": "#F5F3F8",
         "label": "t:settings_schema.colors.settings.colors_background_2.label"
       },
       {
@@ -142,7 +142,7 @@
         "min": 1000,
         "max": 1600,
         "step": 100,
-        "default": 1200,
+        "default": 1400,
         "unit": "px",
         "label": "t:settings_schema.layout.settings.page_width.label"
       },
@@ -154,7 +154,7 @@
         "step": 4,
         "unit": "px",
         "label": "t:settings_schema.layout.settings.spacing_sections.label",
-        "default": 0
+        "default": 32
       },
       {
         "type": "header",
@@ -170,7 +170,7 @@
         "min": 4,
         "max": 40,
         "step": 4,
-        "default": 8,
+        "default": 16,
         "unit": "px",
         "label": "t:settings_schema.layout.settings.spacing_grid_horizontal.label"
       },
@@ -180,7 +180,7 @@
         "min": 4,
         "max": 40,
         "step": 4,
-        "default": 8,
+        "default": 20,
         "unit": "px",
         "label": "t:settings_schema.layout.settings.spacing_grid_vertical.label"
       }
@@ -201,7 +201,7 @@
         "step": 1,
         "unit": "px",
         "label": "t:settings_schema.global.settings.thickness.label",
-        "default": 1
+        "default": 0
       },
       {
         "type": "range",
@@ -221,7 +221,7 @@
         "step": 2,
         "unit": "px",
         "label": "t:settings_schema.global.settings.corner_radius.label",
-        "default": 0
+        "default": 10
       },
       {
         "type": "header",
@@ -387,7 +387,7 @@
         "step": 2,
         "unit": "px",
         "label": "t:settings_schema.global.settings.corner_radius.label",
-        "default": 0
+        "default": 8
       },
       {
         "type": "header",
@@ -544,7 +544,7 @@
         "step": 2,
         "unit": "px",
         "label": "t:settings_schema.global.settings.corner_radius.label",
-        "default": 0
+        "default": 8
       },
       {
         "type": "header",
