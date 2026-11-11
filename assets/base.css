@@ -2886,3 +2886,31 @@ details-disclosure > details {
 .font-body-bold {
   font-weight: var(--font-body-weight-bold);
 }
+
+/* NextKart Atelier foundation: accessible focus and refined control defaults. */
+:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
+.button,
+.shopify-challenge__button,
+.customer button {
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .button:hover,
+  .shopify-challenge__button:hover,
+  .customer button:hover {
+    transform: translateY(-1px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button,
+  .shopify-challenge__button,
+  .customer button {
+    transition: none;
+  }
+}

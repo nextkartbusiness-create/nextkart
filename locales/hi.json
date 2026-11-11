@@ -1,0 +1,16 @@
+{
+  "settings_schema": {
+    "colors": {
+      "name": "रंग"
+    },
+    "typography": {
+      "name": "टाइपोग्राफी"
+    },
+    "layout": {
+      "name": "लेआउट"
+    },
+    "buttons": {
+      "name": "बटन"
+    }
+  }
+}
