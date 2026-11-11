@@ -1,25 +1,53 @@
 name: CI
-on: [push]
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
 jobs:
-  lhci:
-    name: Lighthouse
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Lighthouse
-        uses: shopify/lighthouse-ci-action@1.0
-        with:
-          app_id: ${{ secrets.SHOP_APP_ID }}
-          app_password: ${{ secrets.SHOP_APP_PASSWORD }}
-          store: ${{ secrets.SHOP_STORE }}
-          password: ${{ secrets.SHOP_PASSWORD }}
-          lhci_github_app_token: ${{ secrets.LHCI_GITHUB_TOKEN }}
   theme-check:
     name: Theme Check
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Theme Check
-        uses: shopify/theme-check-action@v1
+      - uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
         with:
-          token: ${{ github.token }}
+          ruby-version: "3.3"
+          bundler-cache: false
+
+      - name: Install Shopify Theme Check
+        run: gem install theme-check --no-document
+
+      - name: Run Theme Check
+        run: theme-check .
+
+  lighthouse:
+    name: Lighthouse
+    runs-on: ubuntu-latest
+    env:
+      SHOP_APP_ID: ${{ secrets.SHOP_APP_ID }}
+      SHOP_APP_PASSWORD: ${{ secrets.SHOP_APP_PASSWORD }}
+      SHOP_STORE: ${{ secrets.SHOP_STORE }}
+      SHOP_PASSWORD: ${{ secrets.SHOP_PASSWORD }}
+      LHCI_GITHUB_TOKEN: ${{ secrets.LHCI_GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run Lighthouse
+        if: ${{ env.SHOP_APP_ID != '' && env.SHOP_APP_PASSWORD != '' && env.SHOP_STORE != '' }}
+        uses: shopify/lighthouse-ci-action@1.0
+        with:
+          app_id: ${{ env.SHOP_APP_ID }}
+          app_password: ${{ env.SHOP_APP_PASSWORD }}
+          store: ${{ env.SHOP_STORE }}
+          password: ${{ env.SHOP_PASSWORD }}
+          lhci_github_app_token: ${{ env.LHCI_GITHUB_TOKEN }}
+
+      - name: Explain skipped Lighthouse check
+        if: ${{ env.SHOP_APP_ID == '' || env.SHOP_APP_PASSWORD == '' || env.SHOP_STORE == '' }}
+        run: echo "Lighthouse skipped because Shopify app credentials or SHOP_STORE are not configured. Add repository Actions secrets to enable it."
