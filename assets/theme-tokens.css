@@ -1,0 +1,107 @@
+/* Nextkart Fashion design tokens.
+   Keep Dawn component styles intact; these tokens are additive. */
+:root {
+  --nk-color-primary: {{ settings.nk_primary | default: '#171717' }};
+  --nk-color-accent: {{ settings.nk_accent | default: '#16834A' }};
+  --nk-color-highlight: {{ settings.nk_highlight | default: '#D9B77E' }};
+  --nk-color-surface: {{ settings.nk_surface | default: '#F5F5F5' }};
+  --nk-color-border: {{ settings.nk_border | default: '#E8E8E8' }};
+  --nk-content-width: {{ settings.nk_content_width | default: 1320 }}px;
+  --nk-section-space-mobile: {{ settings.nk_section_space_mobile | default: 32 }}px;
+  --nk-section-space-desktop: {{ settings.nk_section_space_desktop | default: 64 }}px;
+  --nk-card-radius: {{ settings.nk_card_radius | default: 12 }}px;
+  --nk-button-radius: {{ settings.nk_button_radius | default: 6 }}px;
+  --nk-button-height: {{ settings.nk_button_height | default: 48 }}px;
+  --nk-motion-fast: 160ms;
+  --nk-motion-base: 240ms;
+  --nk-ease-standard: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: rgb(var(--color-base-text));
+  background: rgb(var(--color-base-background-1));
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+p,
+.rte {
+  text-wrap: pretty;
+}
+
+.page-width {
+  max-width: var(--nk-content-width);
+}
+
+.button,
+.shopify-challenge__button,
+.customer button {
+  min-height: var(--nk-button-height);
+  border-radius: var(--nk-button-radius);
+  transition:
+    color var(--nk-motion-fast) var(--nk-ease-standard),
+    background-color var(--nk-motion-fast) var(--nk-ease-standard),
+    border-color var(--nk-motion-fast) var(--nk-ease-standard),
+    transform var(--nk-motion-fast) var(--nk-ease-standard);
+}
+
+.card,
+.card__inner,
+.global-media-settings {
+  border-radius: var(--nk-card-radius);
+}
+
+.focus-none:focus-visible,
+:focus-visible {
+  outline: 2px solid var(--nk-color-accent);
+  outline-offset: 3px;
+}
+
+@media screen and (max-width: 749px) {
+  .nk-section-spacing {
+    padding-block: var(--nk-section-space-mobile);
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .nk-section-spacing {
+    padding-block: var(--nk-section-space-desktop);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .button:hover,
+  .shopify-challenge__button:hover,
+  .customer button:hover {
+    transform: translateY(-1px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
