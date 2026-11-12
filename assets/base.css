@@ -2896,7 +2896,14 @@ details-disclosure > details {
 .button,
 .shopify-challenge__button,
 .customer button {
-  transition: opacity 160ms ease, transform 160ms ease;
+  min-height: var(--nk-button-height, 48px);
+  border-radius: var(--nk-button-radius, 6px);
+  transition:
+    color 160ms ease,
+    background-color 160ms ease,
+    border-color 160ms ease,
+    opacity 160ms ease,
+    transform 160ms ease;
 }
 
 @media (hover: hover) and (pointer: fine) {
