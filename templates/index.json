@@ -1,211 +1,173 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "hero": {
+      "type": "hero-banner",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "slide1": {
+          "type": "slide",
           "settings": {
-            "heading": "Image banner",
-            "heading_size": "h0"
+            "heading": "Find your next\nfavourite look.",
+            "subtext": "<p>Fresh styles for every day. Discover fashion that feels like you.</p>",
+            "button_label": "SHOP THE COLLECTION",
+            "button_link": "shopify://collections/all"
           }
         },
-        "text": {
-          "type": "text",
+        "slide2": {
+          "type": "slide",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
+            "heading": "New season.\nNew essentials.",
+            "subtext": "<p>Elevated everyday pieces for men, women and kids.</p>",
+            "button_label": "EXPLORE NEW IN",
+            "button_link": "shopify://collections/all"
           }
         },
-        "button": {
-          "type": "buttons",
+        "slide3": {
+          "type": "slide",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "heading": "Style starts here.",
+            "subtext": "<p>Thoughtful picks. Easy styling. Great everyday value.</p>",
+            "button_label": "SHOP NOW",
+            "button_link": "shopify://collections/all"
           }
         }
       },
       "block_order": [
-        "heading",
-        "text",
-        "button"
+        "slide1",
+        "slide2",
+        "slide3"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "text_position": "left",
+        "overlay_opacity": 35,
+        "desktop_height": 650,
+        "mobile_height": 480,
+        "text_color": "#FFFFFF",
+        "background_color": "#292929",
+        "button_color": "#FFFFFF",
+        "button_text_color": "#171717",
+        "button_radius": 28
       }
     },
-    "rich_text": {
-      "type": "rich-text",
+    "shop_deals": {
+      "type": "collection-list",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "men": {
+          "type": "featured_collection",
           "settings": {
-            "heading": "<p>Talk about your brand</p>",
-            "heading_size": "h1"
+            "collection": ""
           }
         },
-        "text": {
-          "type": "text",
+        "women": {
+          "type": "featured_collection",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "collection": ""
+          }
+        },
+        "kids": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
           }
         }
       },
       "block_order": [
-        "heading",
-        "text"
+        "men",
+        "women",
+        "kids"
       ],
       "settings": {
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
-      }
-    },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
+        "title": "Shop by collection",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
         "color_scheme": "background-1",
         "show_view_all": false,
-        "swipe_on_mobile": false,
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
         "columns_mobile": "2",
-        "padding_top": 28,
-        "padding_bottom": 36
+        "swipe_on_mobile": true,
+        "padding_top": 44,
+        "padding_bottom": 40
       }
     },
-    "collage": {
-      "type": "collage",
-      "blocks": {
-        "collection-0": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "product": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "second_image": false
-          }
-        },
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection-0",
-        "product",
-        "collection-1"
-      ],
-      "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "video": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "heading_size": "h1",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn": {
+    "promo_tiles": {
       "type": "multicolumn",
       "blocks": {
-        "column1": {
+        "new_in": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "title": "New in",
+            "text": "<p>Fresh finds you will love.</p>",
+            "link_label": "Explore now",
+            "link": "shopify://collections/all"
           }
         },
-        "column2": {
+        "everyday": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "title": "Everyday essentials",
+            "text": "<p>Easy pieces for every wardrobe.</p>",
+            "link_label": "Shop essentials",
+            "link": "shopify://collections/all"
           }
         },
-        "column3": {
+        "sale": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "title": "Offers you will love",
+            "text": "<p>Discover great picks at great value.</p>",
+            "link_label": "View offers",
+            "link": "shopify://collections/all"
           }
         }
       },
       "block_order": [
-        "column1",
-        "column2",
-        "column3"
+        "new_in",
+        "everyday",
+        "sale"
       ],
       "settings": {
-        "title": "",
+        "title": "The Nextkart edit",
         "heading_size": "h1",
         "image_width": "third",
-        "image_ratio": "adapt",
+        "image_ratio": "portrait",
         "columns_desktop": 3,
         "column_alignment": "center",
         "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "color_scheme": "background-1",
         "columns_mobile": "1",
+        "padding_top": 28,
+        "padding_bottom": 44
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Trending now",
+        "heading_size": "h1",
+        "collection": "all",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "portrait",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
         "padding_top": 36,
         "padding_bottom": 36
       }
     }
   },
   "order": [
-    "image_banner",
-    "rich_text",
-    "featured_collection",
-    "collage",
-    "video",
-    "multicolumn"
+    "hero",
+    "shop_deals",
+    "promo_tiles",
+    "featured_collection"
   ]
 }
