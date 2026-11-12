@@ -2921,3 +2921,80 @@ details-disclosure > details {
     transition: none;
   }
 }
+
+
+/* Nextkart Fashion header foundation */
+.section-header .header-wrapper {
+  background: rgb(var(--color-background));
+  color: rgb(var(--color-foreground));
+  border-bottom: 1px solid var(--nk-color-border, #e8e8e8);
+}
+
+.section-header .header {
+  min-height: 6.4rem;
+  gap: 1.6rem;
+}
+
+.section-header .header__heading-link {
+  text-decoration: none;
+}
+
+.section-header .header__heading-logo {
+  height: auto;
+  max-height: 5.2rem;
+  object-fit: contain;
+}
+
+.section-header .header__menu-item,
+.section-header .list-menu__item--link {
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.section-header .header__menu-item:hover,
+.section-header .list-menu__item--link:hover {
+  color: var(--nk-color-accent, #16834a);
+}
+
+.section-header .header__icon {
+  color: rgb(var(--color-foreground));
+  transition: color 160ms ease, transform 160ms ease;
+}
+
+.section-header .header__icon:hover {
+  color: var(--nk-color-accent, #16834a);
+  transform: translateY(-1px);
+}
+
+.section-header .header__search .field {
+  border: 1px solid var(--nk-color-border, #e8e8e8);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.section-header .header__search .field:focus-within {
+  border-color: var(--nk-color-accent, #16834a);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--nk-color-accent, #16834a) 14%, transparent);
+}
+
+.section-header .header__search .search__input {
+  min-height: 4.4rem;
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 989px) {
+  .section-header .header {
+    min-height: 5.8rem;
+    padding-inline: 1.6rem;
+  }
+
+  .section-header .header__heading-logo {
+    max-height: 4.4rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .section-header .header__icon {
+    transition: none;
+  }
+}
