@@ -8,6 +8,109 @@
     "theme_support_url": "https://support.shopify.com/"
   },
   {
+    "name": "Nextkart Fashion Design System",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Brand colours"
+      },
+      {
+        "type": "color",
+        "id": "nk_primary",
+        "label": "Primary brand colour",
+        "default": "#171717"
+      },
+      {
+        "type": "color",
+        "id": "nk_accent",
+        "label": "Fashion accent",
+        "default": "#16834A"
+      },
+      {
+        "type": "color",
+        "id": "nk_highlight",
+        "label": "Highlight colour",
+        "default": "#D9B77E"
+      },
+      {
+        "type": "color",
+        "id": "nk_surface",
+        "label": "Soft surface",
+        "default": "#F5F5F5"
+      },
+      {
+        "type": "color",
+        "id": "nk_border",
+        "label": "Design system border",
+        "default": "#E8E8E8"
+      },
+      {
+        "type": "header",
+        "content": "Typography and layout"
+      },
+      {
+        "type": "range",
+        "id": "nk_content_width",
+        "label": "Content maximum width",
+        "min": 1000,
+        "max": 1600,
+        "step": 20,
+        "unit": "px",
+        "default": 1320
+      },
+      {
+        "type": "range",
+        "id": "nk_section_space_mobile",
+        "label": "Mobile section spacing",
+        "min": 16,
+        "max": 64,
+        "step": 4,
+        "unit": "px",
+        "default": 32
+      },
+      {
+        "type": "range",
+        "id": "nk_section_space_desktop",
+        "label": "Desktop section spacing",
+        "min": 24,
+        "max": 112,
+        "step": 4,
+        "unit": "px",
+        "default": 64
+      },
+      {
+        "type": "range",
+        "id": "nk_card_radius",
+        "label": "Card corner radius",
+        "min": 0,
+        "max": 32,
+        "step": 2,
+        "unit": "px",
+        "default": 12
+      },
+      {
+        "type": "range",
+        "id": "nk_button_radius",
+        "label": "Button corner radius",
+        "min": 0,
+        "max": 32,
+        "step": 2,
+        "unit": "px",
+        "default": 6
+      },
+      {
+        "type": "range",
+        "id": "nk_button_height",
+        "label": "Button minimum height",
+        "min": 40,
+        "max": 60,
+        "step": 2,
+        "unit": "px",
+        "default": 48
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.colors.name",
     "settings": [
       {
