@@ -68,6 +68,19 @@
         --color-base-accent-2: {{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }};
         --payment-terms-background-color: {{ settings.colors_background_1 }};
 
+        /* Nextkart Fashion theme-editor design tokens */
+        --nk-color-primary: {{ settings.nk_primary | default: '#171717' }};
+        --nk-color-accent: {{ settings.nk_accent | default: '#16834A' }};
+        --nk-color-highlight: {{ settings.nk_highlight | default: '#D9B77E' }};
+        --nk-color-surface: {{ settings.nk_surface | default: '#F5F5F5' }};
+        --nk-color-border: {{ settings.nk_border | default: '#E8E8E8' }};
+        --nk-content-width: {{ settings.nk_content_width | default: 1320 }}px;
+        --nk-section-space-mobile: {{ settings.nk_section_space_mobile | default: 32 }}px;
+        --nk-section-space-desktop: {{ settings.nk_section_space_desktop | default: 64 }}px;
+        --nk-card-radius: {{ settings.nk_card_radius | default: 12 }}px;
+        --nk-button-radius: {{ settings.nk_button_radius | default: 6 }}px;
+        --nk-button-height: {{ settings.nk_button_height | default: 48 }}px;
+
         --gradient-base-background-1: {% if settings.gradient_background_1 != blank %}{{ settings.gradient_background_1 }}{% else %}{{ settings.colors_background_1 }}{% endif %};
         --gradient-base-background-2: {% if settings.gradient_background_2 != blank %}{{ settings.gradient_background_2 }}{% else %}{{ settings.colors_background_2 }}{% endif %};
         --gradient-base-accent-1: {% if settings.gradient_accent_1 != blank %}{{ settings.gradient_accent_1 }}{% else %}{{ settings.colors_accent_1 }}{% endif %};
