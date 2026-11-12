@@ -1,3 +1,21 @@
+
+{%- style -%}
+  .announcement-bar {
+    background: #17191d !important;
+    color: #ffffff !important;
+    border: 0;
+  }
+  .announcement-bar__message {
+    color: #ffffff !important;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: .025em;
+  }
+  @media screen and (max-width: 749px) {
+    .announcement-bar__message { font-size: 1.1rem; }
+  }
+{%- endstyle -%}
+
 {%- for block in section.blocks -%}
   {%- case block.type -%}
     {%- when 'announcement' -%}
