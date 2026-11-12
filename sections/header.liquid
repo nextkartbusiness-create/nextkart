@@ -320,7 +320,7 @@
                       type="search"
                       name="q"
                       value=""
-                      placeholder="{{ 'general.search.search' | t }}"
+                      placeholder="{{ section.settings.search_placeholder | default: 'Search for kurtas, shirts, sarees…' | escape }}"
                       {%- if settings.predictive_search_enabled -%}
                         role="combobox"
                         aria-expanded="false"
@@ -516,7 +516,7 @@
                       type="search"
                       name="q"
                       value=""
-                      placeholder="{{ 'general.search.search' | t }}"
+                      placeholder="{{ section.settings.search_placeholder | default: 'Search for kurtas, shirts, sarees…' | escape }}"
                       {%- if settings.predictive_search_enabled -%}
                         role="combobox"
                         aria-expanded="false"
@@ -811,6 +811,12 @@
       "id": "menu",
       "default": "main-menu",
       "label": "t:sections.header.settings.menu.label"
+    },
+    {
+      "type": "text",
+      "id": "search_placeholder",
+      "label": "Fashion search placeholder",
+      "default": "Search for kurtas, shirts, sarees…"
     },
     {
       "type": "select",
