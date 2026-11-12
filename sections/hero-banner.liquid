@@ -1,4 +1,53 @@
 {%- style -%}
+/* Nextkart storefront reference styling */
+.hero-banner-{{ section.id }} {
+  border-radius: 0;
+}
+.hero-banner-{{ section.id }} .hero-banner__slide {
+  min-height: {{ section.settings.desktop_height }}px;
+}
+.hero-banner-{{ section.id }} .hero-banner__content {
+  max-width: 1320px;
+}
+.hero-banner-{{ section.id }} .hero-banner__heading {
+  max-width: 760px;
+  font-weight: 750;
+  letter-spacing: -0.045em;
+  text-wrap: balance;
+}
+.hero-banner-{{ section.id }} .hero-banner__text {
+  max-width: 540px;
+  font-size: clamp(1.6rem, 2vw, 2rem);
+}
+.hero-banner-{{ section.id }} .hero-banner__button {
+  min-height: 48px;
+  padding-inline: 30px;
+  letter-spacing: .06em;
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 749px) {
+  .hero-banner-{{ section.id }} .hero-banner__slide {
+    min-height: {{ section.settings.mobile_height }}px;
+  }
+  .hero-banner-{{ section.id }} .hero-banner__content {
+    padding: 32px 24px 68px;
+  }
+  .hero-banner-{{ section.id }} .hero-banner__heading {
+    max-width: 340px;
+    font-size: clamp(3rem, 11vw, 4.5rem);
+  }
+  .hero-banner-{{ section.id }} .hero-banner__text {
+    max-width: 300px;
+    font-size: 1.5rem;
+  }
+  .hero-banner-{{ section.id }} .hero-banner__button {
+    min-height: 44px;
+    font-size: 1.05rem;
+  }
+}
+{%- endstyle -%}
+
+{%- style -%}
   .hero-banner-{{ section.id }} {
     position: relative;
     overflow: hidden;
