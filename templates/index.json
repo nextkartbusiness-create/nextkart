@@ -162,11 +162,94 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "six_tiles": {
+      "type": "nextkart-six-tiles",
+      "blocks": {
+        "men": {
+          "type": "tile",
+          "settings": {
+            "subtitle": "FOR HIM",
+            "title": "Men",
+            "button_label": "Shop men",
+            "link": "shopify://collections/all"
+          }
+        },
+        "women": {
+          "type": "tile",
+          "settings": {
+            "subtitle": "FOR HER",
+            "title": "Women",
+            "button_label": "Shop women",
+            "link": "shopify://collections/all"
+          }
+        },
+        "kids": {
+          "type": "tile",
+          "settings": {
+            "subtitle": "LITTLE STYLES",
+            "title": "Kids",
+            "button_label": "Shop kids",
+            "link": "shopify://collections/all"
+          }
+        },
+        "new_arrivals": {
+          "type": "tile",
+          "settings": {
+            "subtitle": "JUST LANDED",
+            "title": "New arrivals",
+            "button_label": "Explore new",
+            "link": "shopify://collections/all"
+          }
+        },
+        "accessories": {
+          "type": "tile",
+          "settings": {
+            "subtitle": "COMPLETE THE LOOK",
+            "title": "Accessories",
+            "button_label": "Discover",
+            "link": "shopify://collections/all"
+          }
+        },
+        "best_sellers": {
+          "type": "tile",
+          "settings": {
+            "subtitle": "MORE TO LOVE",
+            "title": "Best sellers",
+            "button_label": "Shop popular",
+            "link": "shopify://collections/all"
+          }
+        }
+      },
+      "block_order": [
+        "men",
+        "women",
+        "kids",
+        "new_arrivals",
+        "accessories",
+        "best_sellers"
+      ],
+      "settings": {
+        "eyebrow": "THE NEXTKART EDIT",
+        "title": "Find your style",
+        "description": "<p>Explore the latest looks for every part of your wardrobe.</p>",
+        "text_alignment": "center",
+        "accent_color": "#6C2BFF",
+        "color_scheme": "background-1",
+        "card_height": 340,
+        "mobile_card_height": 220,
+        "corner_radius": 18,
+        "grid_gap": 16,
+        "overlay_opacity": 45,
+        "padding_top": 40,
+        "padding_bottom": 44
+      }
     }
   },
   "order": [
     "hero",
     "shop_deals",
+    "six_tiles",
     "promo_tiles",
     "featured_collection"
   ]
