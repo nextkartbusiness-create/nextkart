@@ -185,6 +185,10 @@
     }
   },
   "templates": {
+    "404": {
+      "title": "Page not found",
+      "subtext": "404"
+    },
     "search": {
       "no_results": "No results found for “{{ terms }}”. Check the spelling or use a different word or phrase.",
       "page": "Page",
@@ -214,10 +218,6 @@
         "post_success": "Thanks for contacting us. We'll get back to you as soon as possible.",
         "error_heading": "Please adjust the following:"
       }
-    },
-    "404": {
-      "title": "Page not found",
-      "subtext": "404"
     }
   },
   "sections": {
@@ -292,6 +292,46 @@
     },
     "page": {
       "title": "Page title"
+    },
+    "hero_banner": {
+      "default_heading": "Discover your style",
+      "default_text": "Explore the latest arrivals and timeless essentials.",
+      "slide_controls": "Featured slides",
+      "slide_number": "Go to slide {{ number }}",
+      "name": "Hero banner",
+      "settings": {
+        "accessibility_label": "Accessibility label",
+        "autoplay": "Enable automatic slideshow",
+        "autoplay_speed": "Change slides every",
+        "text_position": "Text alignment",
+        "text_position_left": "Left",
+        "text_position_center": "Center",
+        "text_position_right": "Right",
+        "overlay_opacity": "Image overlay opacity",
+        "desktop_height": "Desktop height",
+        "mobile_height": "Mobile height",
+        "text_color": "Text color",
+        "background_color": "Background color",
+        "button_color": "Button color",
+        "button_text_color": "Button text color",
+        "button_radius": "Button corner radius"
+      },
+      "blocks": {
+        "slide": {
+          "name": "Slide",
+          "settings": {
+            "image": "Desktop image",
+            "mobile_image": "Mobile image",
+            "heading": "Heading",
+            "subtext": "Text",
+            "button_label": "Button label",
+            "button_link": "Button link"
+          }
+        }
+      },
+      "presets": {
+        "name": "Hero banner"
+      }
     }
   },
   "localization": {
