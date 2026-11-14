@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 150" role="img" aria-labelledby="title desc">
+<title id="title">NextKart</title><desc id="desc">NextKart shopping brand logo in black and green</desc>
+<g fill="none" stroke="#15803D" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+<path d="M22 35h28l18 70h106l24-54H61"/>
+<circle cx="86" cy="126" r="8" fill="#15803D" stroke="none"/><circle cx="158" cy="126" r="8" fill="#15803D" stroke="none"/>
+<path d="M26 20C78 -2 132 1 178 18" stroke-width="6"/><path d="M164 7l18 11-19 12" stroke-width="6"/>
+</g>
+<text x="225" y="103" font-family="Arial, Helvetica, sans-serif" font-size="82" font-weight="800" letter-spacing="-4" fill="#111111">Next</text>
+<text x="390" y="103" font-family="Arial, Helvetica, sans-serif" font-size="82" font-weight="800" letter-spacing="-4" fill="#15803D">Kart</text>
+</svg>
