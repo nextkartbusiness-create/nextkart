@@ -35,6 +35,7 @@
   .header__heading-logo {
     max-width: {{ section.settings.logo_width }}px;
   }
+  .nextkart-header-logo { width: min(100%, {{ section.settings.logo_width }}px); height: auto; object-fit: contain; }
 
   @media screen and (min-width: 990px) {
     header-drawer {
@@ -384,7 +385,8 @@
               alt: logo_alt
             }}
           {%- else -%}
-            <span class="h2">{{ shop.name }}</span>
+            <img src="{{ 'nextkart-logo.svg' | asset_url }}" class="header__heading-logo nextkart-header-logo" width="310" height="75" alt="NextKart" loading="eager">
+
           {%- endif -%}
         </a>
     {%- if request.page_type == 'index' -%}
