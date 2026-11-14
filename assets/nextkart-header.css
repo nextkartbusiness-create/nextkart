@@ -1,0 +1,33 @@
+/* NextKart Phase 2 — premium responsive header. Scoped to Dawn header markup. */
+.header-wrapper{--nk-ink:#111827;--nk-muted:#667085;--nk-accent:#15803d;--nk-border:rgba(17,24,39,.08);position:relative;z-index:20;background:rgba(255,255,255,.96);border-bottom:1px solid var(--nk-border);-webkit-backdrop-filter:saturate(180%) blur(14px);backdrop-filter:saturate(180%) blur(14px);transition:box-shadow .25s ease,background-color .25s ease}
+.shopify-section-header-sticky .header-wrapper{box-shadow:0 8px 28px rgba(17,24,39,.07)}
+.header-wrapper--border-bottom{border-bottom-color:var(--nk-border)}
+.header-wrapper .header{min-height:76px;max-width:1440px;padding-left:clamp(1.6rem,4vw,5.6rem);padding-right:clamp(1.6rem,4vw,5.6rem);column-gap:clamp(1.2rem,2.4vw,3.2rem)}
+.header__heading-link{text-decoration:none}
+.header__heading-logo{display:block;width:auto;max-height:52px;object-fit:contain}
+.header__heading .h2,.header__heading-link .h2{color:var(--nk-ink);font-size:clamp(2rem,2.1vw,2.6rem);font-weight:800;letter-spacing:-.055em}
+.header__inline-menu{flex:1 1 auto}
+.header__inline-menu .list-menu--inline{align-items:center;justify-content:center;gap:clamp(.4rem,1.25vw,1.8rem)}
+.header__menu-item,.header__inline-menu .list-menu__item--link{min-height:44px;padding:.8rem .35rem;color:var(--nk-ink);font-size:1.35rem;font-weight:600;letter-spacing:.005em;text-decoration:none;transition:color .18s ease}
+.header__menu-item:hover,.header__menu-item:focus-visible,.header__active-menu-item{color:var(--nk-accent);text-decoration:none}
+.header__active-menu-item{text-decoration:underline;text-underline-offset:.55rem}
+.header__menu-item .icon-caret{margin-left:.5rem}
+.header__submenu,.mega-menu__content{border:1px solid var(--nk-border);border-radius:0 0 16px 16px;box-shadow:0 18px 42px rgba(17,24,39,.12)}
+.mega-menu__content{padding:2.8rem 0 3.2rem}
+.mega-menu__link{color:var(--nk-ink);font-size:1.35rem;transition:color .18s ease,transform .18s ease}
+.mega-menu__link:hover{color:var(--nk-accent);transform:translateX(2px)}
+.header__icons{gap:.45rem;align-items:center}
+.header__icon{width:4.2rem;height:4.2rem;border-radius:50%;color:var(--nk-ink);transition:background-color .18s ease,color .18s ease,transform .18s ease}
+.header__icon:hover{color:var(--nk-accent);background:rgba(21,128,61,.08);transform:translateY(-1px)}
+.header__icon .icon{width:2rem;height:2rem}
+.cart-count-bubble{background:var(--nk-accent);color:#fff;border:2px solid #fff;font-weight:700}
+.header__search .search-modal__content{border:1px solid var(--nk-border);border-radius:0 0 18px 18px;box-shadow:0 18px 42px rgba(17,24,39,.12)}
+.header__search .search__input{border-radius:999px;background:#f5f7f6}
+.header__search .field:before,.header__search .field:after{border-radius:999px}
+.menu-drawer{border-radius:0 0 18px 18px;box-shadow:0 18px 42px rgba(17,24,39,.14)}
+.menu-drawer__menu-item{min-height:4.8rem;border-bottom:1px solid var(--nk-border);font-weight:600}
+.header-wrapper a:focus-visible,.header-wrapper button:focus-visible,.header-wrapper summary:focus-visible{outline:2px solid var(--nk-accent);outline-offset:3px;border-radius:6px}
+@media screen and (min-width:990px){.header--middle-left{display:grid;grid-template-columns:auto minmax(0,1fr) auto}.header--middle-left .header__heading{margin-right:clamp(1.5rem,2vw,3rem)}}
+@media screen and (max-width:989px){.header-wrapper .header{min-height:64px;padding-left:1.5rem;padding-right:1.5rem;column-gap:.5rem}.header__heading-logo{max-height:42px}.header__icons{gap:0}.header__icon{width:4rem;height:4rem}header-drawer{margin-left:-.8rem}}
+@media screen and (max-width:749px){.header-wrapper .header{min-height:58px;padding-top:.6rem;padding-bottom:.6rem}.header__heading-logo{max-height:36px;max-width:min(42vw,150px)}.header__icons{margin-right:-.7rem}.header__icon{width:3.8rem;height:3.8rem}.header__icon .icon{width:1.9rem;height:1.9rem}.header__heading .h2,.header__heading-link .h2{font-size:1.9rem}.menu-drawer{width:min(88vw,38rem)}.menu-drawer__inner-container{padding-bottom:env(safe-area-inset-bottom)}}
+@media(prefers-reduced-motion:reduce){.header-wrapper,.header__menu-item,.header__icon,.mega-menu__link{transition:none!important}}
