@@ -51,14 +51,14 @@
       {
         "type": "color",
         "id": "colors_text",
-        "default": "#14231A",
+        "default": "#111111",
         "label": "t:settings_schema.colors.settings.colors_text.label",
         "info": "t:settings_schema.colors.settings.colors_text.info"
       },
       {
         "type": "color",
         "id": "colors_outline_button_labels",
-        "default": "#14532D",
+        "default": "#111111",
         "label": "t:settings_schema.colors.settings.colors_outline_button_labels.label",
         "info": "t:settings_schema.colors.settings.colors_outline_button_labels.info"
       },
@@ -76,7 +76,7 @@
       {
         "type": "color",
         "id": "colors_background_2",
-        "default": "#F1F8F2",
+        "default": "#F5F7F5",
         "label": "t:settings_schema.colors.settings.colors_background_2.label"
       },
       {
