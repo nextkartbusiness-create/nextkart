@@ -244,13 +244,216 @@
         "padding_top": 40,
         "padding_bottom": 44
       }
+    },
+    "trust_strip": {
+      "type": "nextkart-trust-strip",
+      "blocks": {
+        "secure": {
+          "type": "item",
+          "settings": {
+            "title": "Secure payments",
+            "text": "Safe and trusted checkout",
+            "icon": "lock"
+          }
+        },
+        "shipping": {
+          "type": "item",
+          "settings": {
+            "title": "Fast dispatch",
+            "text": "Carefully packed orders",
+            "icon": "truck"
+          }
+        },
+        "support": {
+          "type": "item",
+          "settings": {
+            "title": "Friendly support",
+            "text": "We are here to help",
+            "icon": "chat"
+          }
+        },
+        "returns": {
+          "type": "item",
+          "settings": {
+            "title": "Easy assistance",
+            "text": "Support when you need it",
+            "icon": "heart"
+          }
+        }
+      },
+      "block_order": [
+        "secure",
+        "shipping",
+        "support",
+        "returns"
+      ],
+      "settings": {
+        "color_scheme": "background-2",
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "promo_grid": {
+      "type": "nextkart-promo-grid",
+      "blocks": {
+        "new": {
+          "type": "card",
+          "settings": {
+            "eyebrow": "JUST DROPPED",
+            "title": "New arrivals",
+            "text": "Meet the latest additions to your rotation.",
+            "button_label": "Shop new in",
+            "link": "shopify://collections/all",
+            "tone": "violet"
+          }
+        },
+        "essentials": {
+          "type": "card",
+          "settings": {
+            "eyebrow": "THE DAILY LINE-UP",
+            "title": "Everyday essentials",
+            "text": "Easy staples to reach for on repeat.",
+            "button_label": "Explore essentials",
+            "link": "shopify://collections/all",
+            "tone": "sand"
+          }
+        },
+        "edit": {
+          "type": "card",
+          "settings": {
+            "eyebrow": "CURATED FOR YOU",
+            "title": "The style edit",
+            "text": "Fresh ideas for your next favourite look.",
+            "button_label": "Discover the edit",
+            "link": "shopify://collections/all",
+            "tone": "blue"
+          }
+        }
+      },
+      "block_order": [
+        "new",
+        "essentials",
+        "edit"
+      ],
+      "settings": {
+        "eyebrow": "CURATED TO INSPIRE",
+        "title": "Your next favourite starts here.",
+        "color_scheme": "background-1",
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
+    "editorial_banner": {
+      "type": "nextkart-editorial-banner",
+      "blocks": {
+        "copy": {
+          "type": "content",
+          "settings": {
+            "eyebrow": "THE EVERYDAY EDIT",
+            "heading": "Made for your moments.",
+            "text": "<p>Easy-to-wear styles, thoughtful details and fresh favourites for every day.</p>",
+            "button_label": "Explore the collection",
+            "link": "shopify://collections/all"
+          }
+        }
+      },
+      "block_order": [
+        "copy"
+      ],
+      "settings": {
+        "image_position": "right",
+        "min_height": 480,
+        "corner_radius": 20,
+        "accent_color": "#6C2BFF",
+        "color_scheme": "background-2"
+      }
+    },
+    "brand_story": {
+      "type": "nextkart-brand-story",
+      "blocks": {
+        "story1": {
+          "type": "point",
+          "settings": {
+            "number": "01",
+            "title": "Everyday confidence",
+            "text": "Comfort-led styles that feel as good as they look."
+          }
+        },
+        "story2": {
+          "type": "point",
+          "settings": {
+            "number": "02",
+            "title": "For every wardrobe",
+            "text": "Discover considered picks across men, women and kids."
+          }
+        },
+        "story3": {
+          "type": "point",
+          "settings": {
+            "number": "03",
+            "title": "A simpler choice",
+            "text": "Find new favourites without overthinking your style."
+          }
+        }
+      },
+      "block_order": [
+        "story1",
+        "story2",
+        "story3"
+      ],
+      "settings": {
+        "eyebrow": "WHY NEXTKART",
+        "title": "A little more you, every day.",
+        "description": "<p>We bring together versatile fashion and everyday essentials to make getting dressed feel effortless.</p>",
+        "color_scheme": "background-1",
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "A little good news, in your inbox.",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Get first looks at new arrivals, thoughtful edits and special updates from NextKart.</p>"
+          }
+        },
+        "email_form": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading",
+        "paragraph",
+        "email_form"
+      ],
+      "settings": {
+        "color_scheme": "inverse",
+        "full_width": true,
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
     }
   },
   "order": [
     "hero",
+    "trust_strip",
     "shop_deals",
     "six_tiles",
+    "featured_collection",
+    "promo_grid",
+    "editorial_banner",
+    "brand_story",
     "promo_tiles",
-    "featured_collection"
+    "newsletter"
   ]
 }
