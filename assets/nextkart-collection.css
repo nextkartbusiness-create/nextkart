@@ -1,5 +1,5 @@
 /* NextKart premium collection experience */
-.nextkart-collection{--nk-ink:#17151c;--nk-muted:#77727f;--nk-line:#ece9f1;--nk-purple:#6c2bff;color:var(--nk-ink)}
+.nextkart-collection{--nk-ink:#17151c;--nk-muted:#77727f;--nk-line:#ece9f1;--nk-purple:#15803D;color:var(--nk-ink)}
 .nextkart-collection .facets-wrapper{margin:0 auto 22px!important;padding:0!important}
 .nextkart-collection .facets-container{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px 0;border-top:1px solid var(--nk-line);border-bottom:1px solid var(--nk-line)}
 .nextkart-collection .facets__heading,.nextkart-collection .facet-filters__label{font-size:1.25rem;font-weight:700;color:var(--nk-ink)}
@@ -7,7 +7,7 @@
 .nextkart-collection .facets__summary:hover,.nextkart-collection .facet-filters__sort:hover{border-color:var(--nk-purple)}
 .nextkart-collection .facet-filters__field .select{border-radius:999px;overflow:hidden}
 .nextkart-collection .facet-filters__sort{padding-right:38px;box-shadow:none}
-.nextkart-collection .active-facets__button-inner{border-radius:999px;background:#f3efff;border:1px solid #e4d9ff;color:#5120c9}
+.nextkart-collection .active-facets__button-inner{border-radius:999px;background:#EAF7EE;border:1px solid #CDEBD5;color:#14532D}
 .nextkart-collection .product-count{color:var(--nk-muted);font-size:1.25rem}
 .nextkart-collection .collection{padding-top:10px}
 .nextkart-collection .product-grid{column-gap:18px;row-gap:30px}
@@ -20,7 +20,7 @@
 .nextkart-collection .price{font-size:1.45rem;font-weight:700;color:var(--nk-ink)}
 .nextkart-collection .price__compare{color:#96919d;font-weight:400}
 .nextkart-collection .quick-add__submit{min-height:42px;border-radius:999px;background:var(--nk-purple);color:#fff;border:0;font-weight:700}
-.nextkart-collection .quick-add__submit:hover{background:#5420d6}
+.nextkart-collection .quick-add__submit:hover{background:#166534}
 .nextkart-collection .pagination__item{border-radius:50%;border:1px solid var(--nk-line)}
 .nextkart-collection .pagination__item--current{background:var(--nk-purple);color:#fff;border-color:var(--nk-purple)}
 .nextkart-collection .collection--empty{padding:60px 20px;border:1px dashed var(--nk-line);border-radius:18px}
